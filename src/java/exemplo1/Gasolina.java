@@ -4,8 +4,6 @@
  */
 package exemplo1;
 
-import javax.inject.Named;
-
 /**
  *
  * @author jnaves
