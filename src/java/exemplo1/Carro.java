@@ -5,6 +5,7 @@
 package exemplo1;
 
 import javax.annotation.PostConstruct;
+import javax.annotation.PreDestroy;
 import javax.inject.Inject;
 import javax.inject.Named;
 
@@ -40,4 +41,9 @@ public class Carro {
     public void qa(){
         System.out.println("Carro aprovado na inspeção de qualidade.");
     } 
+    
+    @PreDestroy
+    public void ligaAlarme(){
+        System.out.println("Carro desligado, vidros e travas acionados, alarme ligado.");
+    }
 }
