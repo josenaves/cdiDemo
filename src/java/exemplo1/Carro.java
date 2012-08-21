@@ -4,6 +4,7 @@
  */
 package exemplo1;
 
+import javax.annotation.PostConstruct;
 import javax.inject.Inject;
 import javax.inject.Named;
 
@@ -32,6 +33,11 @@ public class Carro {
     
     @Override
     public String toString() {
-        return "Carro:\nFabricante:" + fabricante + "\nModelo:" + modelo + "\nAno:" + ano + "\nCombustível:" + combustivel;
+        return "Carro:\nFabricante:" + fabricante + "\nModelo:" + modelo + "\nAno:" + ano + "\nCombustível:" + combustivel + "\nSerial:" + super.toString();
     }
+    
+    @PostConstruct
+    public void qa(){
+        System.out.println("Carro aprovado na inspeção de qualidade.");
+    } 
 }
