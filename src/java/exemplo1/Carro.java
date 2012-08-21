@@ -23,7 +23,7 @@ public class Carro {
         this.ano = 2008;
     }
     
-    @Inject
+    @Inject @MaisBarato
     private Combustivel combustivel;
     
     public void especificao() {
