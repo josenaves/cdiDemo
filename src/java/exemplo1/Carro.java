@@ -19,6 +19,7 @@ import javax.inject.Named;
  */
 @Named
 @SessionScoped
+@Log
 public class Carro implements Serializable {
     private String fabricante;
     private String modelo;
