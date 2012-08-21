@@ -8,7 +8,6 @@ package exemplo1;
  *
  * @author jnaves
  */
-@MaisBarato
 public class Alcool implements Combustivel {
     @Override
     public String toString() {
